@@ -17,10 +17,10 @@ public class AddressBuilder {
         address.append("Billing Address:");
         address.append("\n");
 
+        //user inputs all billing address info here and it is appended into String
         System.out.print("Billing Street: ");
         address.append(scanner.nextLine());
         address.append("\n");
-
         System.out.print("Billing City: ");
         address.append(scanner.nextLine());
         address.append(", ");
@@ -29,6 +29,26 @@ public class AddressBuilder {
         address.append(" ");
         System.out.print("Billing Zip: ");
         address.append(scanner.nextLine());
+
+        System.out.println();
+        address.append("\n\n");
+        address.append("Shipping Address:");
+        address.append("\n");
+
+        //user inputs all shipping address info here and it is appended into String
+        System.out.print("Shipping Street: ");
+        address.append(scanner.nextLine());
+        address.append("\n");
+        System.out.print("Shipping City: ");
+        address.append(scanner.nextLine());
+        address.append(", ");
+        System.out.print("Shipping State: ");
+        address.append(scanner.nextLine());
+        address.append(" ");
+        System.out.print("Shipping Zip: ");
+        address.append(scanner.nextLine());
+
+
 
         System.out.println(address);
     }
